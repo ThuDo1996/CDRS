@@ -22,12 +22,14 @@ We implement several recommendation methods which can be classified into two mai
 
 **Cross-domain methods**
 - **Bi-TGCF**: is a graph-based method that performs the knowledge transfer at each graph encoder layer.
+- **CCDR**: is the graph-based method that reduce the distribution gap between domains by optimizing the contrastive learning loss based on overlapping users.
 
 You can switch between models in `main.py` by changing the model selection parameter.
 
 
 #### Experimental Results 
 > Hit Ratio (HR) and Normalized Discounted Cumulative Gain (NDCG) are used as evaluation metrics
+
 |          |          Movies     |          CDs        |
 |  Method  |----------|----------|----------|----------|
 |          |    HR@10 |  NDCG@10 |   HR@10  |  NDCG@10 |
